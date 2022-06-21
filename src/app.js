@@ -1,27 +1,38 @@
 import { LightningElement } from "lwc";
 
 export default class App extends LightningElement {
-  title = "Welcome to Lightning Web Components!";
+  cores= new Array();
+  motoboneca=true;
+  motocri=false;
+  comFaixa=true;
+  semFaixa=false;
+  rosaP=true;
+  rosaB=false;
 
-  showFeatures = true;
-
-  /**
-   * Getter for the features property
-   */
-  get features() {
-    return [
-      {
-        label: "Learn in the browser.",
-        icon: "utility:edit",
-      },
-      {
-        label: "View changes to code instantly with Live Compilation.",
-        icon: "utility:refresh",
-      },
-      {
-        label: "Style your components with SLDS.",
-        icon: "utility:brush",
-      },
-    ];
+  boneca(){
+    this.motoboneca=true;
+    this.motocri=false;
   }
+  crianca(){
+    this.motoboneca=false;
+    this.motocri=true;
+  }
+  comfaixa(){
+    this.semFaixa=false;
+    this.comFaixa=true;
+  }semfaixa(){
+
+    this.comFaixa=false;
+    this.semFaixa=true;
+  }
+  rosabordo(){
+    this.rosaP=false;
+    this.rosaB=true;
+  }rosapink(){
+
+    this.rosaB=false;
+    this.rosaP=true;
+  }
+
+
 }
