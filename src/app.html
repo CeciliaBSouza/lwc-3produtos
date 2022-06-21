@@ -3,24 +3,48 @@
 
 	<div>
 		<p>Moto Barbie</p>
-		<p>R$ 2.500,00</p>
-		<lightning-button label="Rosa bordo" variant="destructive" class="slds-m-bottom_x-small">
+		<template if:true={motocri}>
+			<span>R$ 2.500,00</span><br>
+			<img src="https://a-static.mlcdn.com.br/800x560/moto-eletrica-infantil-barbie-moto-trail-2-marchas-com-som-de-motor-bandeirante/magazineluiza/181930500/8b13992ccd9fa05dcafe79af57e8340a.jpg"/><br>
+		</template>
+		<template if:true={motoboneca}>
+			<span>R$ 250,00</span><br>
+			<img src="https://a-static.mlcdn.com.br/800x560/moto-glamour-da-barbie-candide/magazineluiza/183721900/f380f2da20ec07dfb20a89fcf79f558a.jpg"/><br>
+		</template>
+		<lightning-button label="Boneca" class="slds-m-bottom_x-small" onclick={boneca}>
 		</lightning-button>
-		<lightning-button label="Rosa Pink" class="slds-m-left_x-small">
+		<lightning-button label="Criança" class="slds-m-left_x-small" onclick={crianca}>
 		</lightning-button>
-		<img src="https://a-static.mlcdn.com.br/800x560/moto-eletrica-infantil-barbie-moto-trail-2-marchas-com-som-de-motor-bandeirante/magazineluiza/181930500/8b13992ccd9fa05dcafe79af57e8340a.jpg"/>
 	</div>
 
 	<div>
 		<p>Roupa Barbie</p>
-		<p>R$ 50,00</p>
-		<img src="https://http2.mlstatic.com/D_NQ_NP_686289-MLB49893975677_052022-W.jpg"/>
+		<span>R$ 50,00</span><br>
+		<template if:true={comFaixa}>
+			<img src="https://http2.mlstatic.com/D_NQ_NP_686289-MLB49893975677_052022-W.jpg"/><br>
+		</template>
+		<template if:true={semFaixa}>
+			<img src="https://http2.mlstatic.com/D_NQ_NP_738750-MLB45645115857_042021-W.jpg"/><br>
+		</template>
+		<lightning-button label="Com faixa" class="slds-m-bottom_x-small" onclick={comfaixa}>
+		</lightning-button>
+		<lightning-button label="Sem Faixa" class="slds-m-left_x-small" onclick={semfaixa}>
+		</lightning-button>
 	</div>
 
 	<div>
 		<p>Brinco Barbie</p>
-		<p>R$ 29,00</p>
-		<img src="https://images.tcdn.com.br/img/img_prod/938194/brinco_folheado_a_ouro_18k_infantil_barbie_argolinha_89_1_0589ff906e0d1c113a60becb23c99cda.jpg"/>
+		<span>R$ 29,00</span><br>
+		<template if:true={rosaP}>
+			<img src="https://images.tcdn.com.br/img/img_prod/938194/brinco_folheado_a_ouro_18k_infantil_barbie_argolinha_89_1_0589ff906e0d1c113a60becb23c99cda.jpg"/><br>
+		</template>
+		<template if:true={rosaB}>
+			<img src="https://a-static.mlcdn.com.br/800x560/brinco-barbie-padilhajoias/padilhajoias/14881262140/854bf1d4a4f2a1dadb8222b650f26132.jpg"/><br>
+		</template>
+		<lightning-button label="Rosa bordo" class="slds-m-bottom_x-small" onclick={rosabordo}>
+		</lightning-button>
+		<lightning-button label="Rosa Pink" class="slds-m-left_x-small" onclick={rosapink}>
+		</lightning-button>
 
 	</div>
 
