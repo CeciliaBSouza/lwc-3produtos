@@ -1,0 +1,26 @@
+h1 {
+    color: rgb(161, 0, 210);
+}
+p {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.app {
+    background-color: #f79dff;
+    height: 100vh;
+    overflow: scroll;
+}
+div{
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    background-color: #f3c7f7;
+    font-weight: bold;
+}
+img{
+    width: 200PX;
+}
+.slds-m-bottom_x-small{
+    border-color: #af2222;
+    color: #af2222;
+}
