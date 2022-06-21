@@ -4,6 +4,12 @@ h1 {
 p {
     font-family: 'Salesforce Sans', Arial, sans-serif;
     color: rgb(255, 255, 255);
+    background-color: #f17d4f;
+    margin-bottom: 10px;
+}
+span{
+        color: rgb(255, 255, 255);
+
 }
 .app {
     background-color: #f79dff;
@@ -11,14 +17,15 @@ p {
     overflow: scroll;
 }
 div{
-    padding: 20px;
+    padding-bottom: 20px;
     margin: 20px 20px 20px 20px;
     text-align: center;
     background-color: #f3c7f7;
     font-weight: bold;
 }
 img{
-    width: 200PX;
+    height: 200PX;
+    margin: 20px;
 }
 .slds-m-bottom_x-small{
     border-color: #af2222;
